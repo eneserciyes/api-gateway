@@ -16,5 +16,9 @@ public class ApiGatewayConstants {
     public static final String JIRA_CONFIG = "/configuration/jira";
     public static final String SETUP = "/configuration/setup";
     public static final String WORKLOGS = "/time-tracker/tracker/worklogs";
+    public static final String TEAM_REPORTS_ISSUES_DATA = "/time-tracker/tracker/issues-in-sprint";
+    public static final String BOARDS = "/time-tracker/tracker/boards";
+    public static final String SPRINTS = "/time-tracker/tracker/sprints";
+    public static final String ISSUES = "/time-tracker/tracker/issues";
   }
 }
