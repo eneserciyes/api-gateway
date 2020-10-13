@@ -32,6 +32,7 @@ public class PermittedRequestFilter {
         matchers.add(new Matcher(HttpMethod.GET, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.TEAM_REPORTS_ISSUES_DATA));
         matchers.add(new Matcher(HttpMethod.GET, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.BOARDS));
         matchers.add(new Matcher(HttpMethod.GET, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.SPRINTS));
+        matchers.add(new Matcher(HttpMethod.GET, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.ISSUES));
     }
 
     public static PermittedRequestFilter getInstance() {
