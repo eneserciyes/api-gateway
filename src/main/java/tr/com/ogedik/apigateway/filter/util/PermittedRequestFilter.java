@@ -28,6 +28,7 @@ public class PermittedRequestFilter {
         matchers.add(new Matcher(HttpMethod.POST, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.JIRA_CONNECTION_TEST));
         matchers.add(new Matcher(HttpMethod.POST, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.SETUP));
         matchers.add(new Matcher(HttpMethod.GET, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.WORKLOGS));
+        matchers.add(new Matcher(HttpMethod.PUT, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.WORKLOGS));
         matchers.add(new Matcher(HttpMethod.POST, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.WORKLOGS));
         matchers.add(new Matcher(HttpMethod.GET, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.TEAM_REPORTS_ISSUES_DATA));
         matchers.add(new Matcher(HttpMethod.GET, ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.BOARDS));
