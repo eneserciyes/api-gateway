@@ -1,8 +1,6 @@
 package tr.com.ogedik.apigateway.constants;
 
-/**
- * @author orkun.gedik
- */
+/** @author orkun.gedik */
 public enum Permission {
   DEFAULT,
   ADMIN,

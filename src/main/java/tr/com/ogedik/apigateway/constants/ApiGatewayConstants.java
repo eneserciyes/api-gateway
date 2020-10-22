@@ -2,9 +2,7 @@ package tr.com.ogedik.apigateway.constants;
 
 import lombok.experimental.UtilityClass;
 
-/**
- * @author orkun.gedik
- */
+/** @author orkun.gedik */
 @UtilityClass
 public class ApiGatewayConstants {
 

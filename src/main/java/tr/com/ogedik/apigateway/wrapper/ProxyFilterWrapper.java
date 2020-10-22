@@ -6,9 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 import javax.annotation.PostConstruct;
 
-/**
- * @author orkun.gedik
- */
+/** @author orkun.gedik */
 public abstract class ProxyFilterWrapper extends ZuulFilter {
 
   public static Logger logger;

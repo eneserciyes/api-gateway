@@ -7,23 +7,21 @@ import tr.com.ogedik.apigateway.wrapper.ProxyFilterWrapper;
 
 import javax.servlet.http.HttpServletResponse;
 
-/**
- * @author orkun.gedik
- */
+/** @author orkun.gedik */
 @Component
 public class ErrorFilter extends ProxyFilterWrapper {
 
-    @Override
-    public void construct() {
-        super.construct(ErrorFilter.class, FilterConstants.ERROR_TYPE, 1, true);
-    }
+  @Override
+  public void construct() {
+    super.construct(ErrorFilter.class, FilterConstants.ERROR_TYPE, 1, true);
+  }
 
-    @Override
-    public Object run() {
-        HttpServletResponse response = RequestContext.getCurrentContext().getResponse();
+  @Override
+  public Object run() {
+    HttpServletResponse response = RequestContext.getCurrentContext().getResponse();
 
-        logger.info("{}: response status is {}.", response.getStatus());
+    logger.info("{}: response status is {}.", response.getStatus());
 
-        return null;
-    }
+    return null;
+  }
 }

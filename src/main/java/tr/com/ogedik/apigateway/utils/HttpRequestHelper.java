@@ -6,9 +6,7 @@ import org.apache.logging.log4j.Logger;
 import org.springframework.http.*;
 import org.springframework.web.client.RestTemplate;
 
-/**
- * @author orkun.gedik
- */
+/** @author orkun.gedik */
 @UtilityClass
 public class HttpRequestHelper {
 
@@ -21,7 +19,8 @@ public class HttpRequestHelper {
     String url = homeUrl + path;
     logger.info("GET request is sending to {}...", url);
     // make an HTTP GET request with headers
-    ResponseEntity<String> response = restTemplate.exchange(url, HttpMethod.GET, request, String.class, 1);
+    ResponseEntity<String> response =
+        restTemplate.exchange(url, HttpMethod.GET, request, String.class, 1);
     return response.getStatusCode();
   }
 }

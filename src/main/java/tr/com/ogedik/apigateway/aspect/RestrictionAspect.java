@@ -1,28 +1,29 @@
-//package tr.com.ogedik.apigateway.aspect;
+// package tr.com.ogedik.apigateway.aspect;
 //
-//import java.lang.annotation.Annotation;
-//import java.util.Arrays;
-//import java.util.List;
-//import java.util.stream.Collectors;
+// import java.lang.annotation.Annotation;
+// import java.util.Arrays;
+// import java.util.List;
+// import java.util.stream.Collectors;
 //
-//import org.apache.logging.log4j.LogManager;
-//import org.apache.logging.log4j.Logger;
-//import org.aspectj.lang.ProceedingJoinPoint;
-//import org.aspectj.lang.annotation.Aspect;
-//import org.aspectj.lang.reflect.MethodSignature;
+// import org.apache.logging.log4j.LogManager;
+// import org.apache.logging.log4j.Logger;
+// import org.aspectj.lang.ProceedingJoinPoint;
+// import org.aspectj.lang.annotation.Aspect;
+// import org.aspectj.lang.reflect.MethodSignature;
 //
-//import tr.com.ogedik.apigateway.annotations.Authorities;
-//import tr.com.ogedik.apigateway.annotations.Restricted;
-//import tr.com.ogedik.apigateway.constants.Permission;
+// import tr.com.ogedik.apigateway.annotations.Authorities;
+// import tr.com.ogedik.apigateway.annotations.Restricted;
+// import tr.com.ogedik.apigateway.constants.Permission;
 //
-///**
-// * This class is an abstraction for aspect oriented programming in this project. All micro services should
+/// **
+// * This class is an abstraction for aspect oriented programming in this project. All micro
+// services should
 // * call {@link #authorize(ProceedingJoinPoint, Restricted)}.
 // *
 // * @author orkun.gedik
 // */
-//@Aspect
-//public class RestrictionAspect {
+// @Aspect
+// public class RestrictionAspect {
 //  private static final Logger logger = LogManager.getLogger(RestrictionAspect.class);
 //
 //  public static void authorize(ProceedingJoinPoint point, Restricted restricted) {
@@ -62,4 +63,4 @@
 //      throw new ErrorException(ErrorType.AUTHORIZATION_FAILED);
 //    }
 //  }
-//}
+// }

@@ -7,23 +7,25 @@ import tr.com.ogedik.apigateway.wrapper.ProxyFilterWrapper;
 
 import javax.servlet.http.HttpServletRequest;
 
-/**
- * @author orkun.gedik
- */
+/** @author orkun.gedik */
 @Component
 public class RoutingFilter extends ProxyFilterWrapper {
 
-    @Override
-    public void construct() {
-        super.construct(RoutingFilter.class, FilterConstants.ROUTE_TYPE, 1, true);
-    }
+  @Override
+  public void construct() {
+    super.construct(RoutingFilter.class, FilterConstants.ROUTE_TYPE, 1, true);
+  }
 
-    @Override
-    public Object run() {
-        HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
+  @Override
+  public Object run() {
+    HttpServletRequest request = RequestContext.getCurrentContext().getRequest();
 
-        logger.info("{}: {} request to {}", filterType(), request.getMethod(), request.getRequestURL().toString());
+    logger.info(
+        "{}: {} request to {}",
+        filterType(),
+        request.getMethod(),
+        request.getRequestURL().toString());
 
-        return null;
-    }
+    return null;
+  }
 }
