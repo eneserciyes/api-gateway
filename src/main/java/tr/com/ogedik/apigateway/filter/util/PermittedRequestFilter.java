@@ -67,6 +67,10 @@ public class PermittedRequestFilter {
         new Matcher(
             HttpMethod.GET,
             ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.JIRA_CONNECTION_TEST_MAIL));
+    matchers.add(
+            new Matcher(
+                    HttpMethod.POST,
+                    ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.SEND_MAIL));
   }
 
   public static PermittedRequestFilter getInstance() {

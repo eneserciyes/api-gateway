@@ -42,6 +42,11 @@ zuul:
       sensitive-headers: ''
       service-id: time-tracker
       strip-prefix: true
+    notification:
+      path: /notification/*
+      sensitive-headers: ''
+      service-id: notification
+      strip-prefix: true
     users:
       path: /authentication/*
       sensitive-headers: ''
