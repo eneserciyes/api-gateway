@@ -11,6 +11,7 @@ public class ApiGatewayConstants {
     public static final String AUTHENTICATE = "/authentication/authenticate";
     public static final String REGISTRATION = "/authentication/users";
     public static final String JIRA_CONNECTION_TEST = "/integration/jira/connect";
+    public static final String JIRA_CONNECTION_TEST_MAIL = "/integration/jira/connectMail";
     public static final String JIRA_CONFIG = "/configuration/jira";
     public static final String SETUP = "/configuration/setup";
     public static final String WORKLOGS = "/time-tracker/tracker/worklogs";
