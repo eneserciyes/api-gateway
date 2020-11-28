@@ -20,5 +20,6 @@ public class ApiGatewayConstants {
     public static final String SPRINTS = "/time-tracker/tracker/sprints";
     public static final String ISSUES = "/time-tracker/tracker/issues";
     public static final String SEND_MAIL = "/notification/mail";
+    public static final String INDIVIDUAL_REPORT = "/time-tracker/tracker/individual-report";
   }
 }

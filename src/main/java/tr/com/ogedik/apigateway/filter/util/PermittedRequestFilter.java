@@ -71,6 +71,10 @@ public class PermittedRequestFilter {
             new Matcher(
                     HttpMethod.POST,
                     ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.SEND_MAIL));
+    matchers.add(
+            new Matcher(
+                    HttpMethod.GET,
+                    ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.INDIVIDUAL_REPORT));
   }
 
   public static PermittedRequestFilter getInstance() {
