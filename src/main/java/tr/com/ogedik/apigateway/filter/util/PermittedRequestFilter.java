@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 import org.springframework.http.HttpMethod;
 import tr.com.ogedik.apigateway.constants.ApiGatewayConstants;
+import tr.com.ogedik.commons.constants.Services;
 
 import javax.servlet.http.HttpServletRequest;
 import java.util.ArrayList;
@@ -73,8 +74,18 @@ public class PermittedRequestFilter {
                     ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.SEND_MAIL));
     matchers.add(
             new Matcher(
+                    HttpMethod.POST,
+                    ApiGatewayConstants.Paths.API + "/" + Services.AUTHENTICATION + Services.Path.VALIDATE));
+    matchers.add(
+            new Matcher(
+                    HttpMethod.GET,
+                    ApiGatewayConstants.Paths.API + "/" + Services.AUTHENTICATION + Services.Path.USERS));
+    matchers.add(
+            new Matcher(
                     HttpMethod.GET,
                     ApiGatewayConstants.Paths.API + ApiGatewayConstants.Paths.INDIVIDUAL_REPORT));
+
+
   }
 
   public static PermittedRequestFilter getInstance() {
