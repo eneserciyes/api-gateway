@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import tr.com.ogedik.apigateway.exception.ApiGatewayException;
 import tr.com.ogedik.apigateway.exception.error.ApiGatewayErrorType;
-import tr.com.ogedik.apigateway.filter.util.PermittedRequestFilter;
 import tr.com.ogedik.apigateway.wrapper.ProxyFilterWrapper;
 import tr.com.ogedik.commons.constants.Headers;
 import tr.com.ogedik.scrumier.proxy.clients.AuthenticationProxy;
@@ -32,9 +31,9 @@ public class RequestFilter extends ProxyFilterWrapper {
         "Request has been interrupted by Pre-Request filter. The http method is {}, target is {}",
         request.getRequestURL());
 
-    if (PermittedRequestFilter.getInstance().isAuthenticationRequired(request)) {
-      interrupt(request);
-    }
+//    if (PermittedRequestFilter.getInstance().isAuthenticationRequired(request)) {
+//      interrupt(request);
+//    }
 
     return null;
   }
